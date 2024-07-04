@@ -482,7 +482,7 @@ module integer_mate::i256 {
         assert!(as_u256(shr(from(10), 1)) == 5, 0);
         assert!(as_u256(shr(neg_from(10), 1)) == as_u256(neg_from(5)), 0);
         
-        assert!(as_u256(shr(from(MAX_AS_U256), 8)) == 0x7fffffffffffffffffffffffffffff, 0);
+        assert!(as_u256(shr(from(MAX_AS_U256), 8)) == 0x007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF, 0);
         assert!(as_u256(shr(neg_from(MIN_AS_U256), 8)) == 0xff800000000000000000000000000000, 0);
 
         assert!(as_u256(shr(from(MAX_AS_U256), 96)) == 0x7fffffff, 0);
